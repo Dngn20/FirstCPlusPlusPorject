@@ -13,6 +13,8 @@ class FirstController
 {
 public:
     void start();
+private:
+    void output();
 };
 
 #endif /* FirstController_h */
