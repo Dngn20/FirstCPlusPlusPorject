@@ -12,12 +12,32 @@
 
 using namespace std;
 
-void FirstController :: start()
+
+void FirstController :: usePointerToChange(int * pointedTo)
 {
+    *pointedTo = 2 * (6759);
+}
+
+void FirstController :: start()
+
+{
+    int myNumber = 9;
+    int * numberPointer = &myNumber;
     
     std::cout << "Strike Freedom Gundam" << endl;
     this->output();
     
+    cout << myNumber << endl;
+    useNumbers(myNumber);
+    cout << myNumber << endl;
+    
+    
+    cout << "Changin a value" << endl;
+    myNumber = impactNumber();
+    cout << "See - impacted " << myNumber << endl;
+    cout << "Chnaging a value" << endl;
+    usePointerToChange(numberPointer);
+    cout << "See how the number has been changed: " << myNumber << endl;
 }
 
 void FirstController:: output()
@@ -41,3 +61,20 @@ void FirstController:: output()
     getline(cin, name);
     cout << name << endl;
 }
+
+void FirstController:: useNumbers(int givenNumber)
+{
+    cout << "Number is " << givenNumber << endl;
+    givenNumber = (givenNumber * 3 + 3242) / 42;
+    cout << "It is now : " << givenNumber << endl;
+    
+    
+    
+}
+
+int FirstController:: impactNumber()
+{
+    return 345643564;
+}
+
+

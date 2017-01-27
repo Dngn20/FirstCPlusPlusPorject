@@ -14,6 +14,10 @@ class FirstController
 public:
     void start();
 private:
+    void useNumbers(int someNumber);
+    int impactNumber();
+    void usePointerToChange(int * somePointer);
+private:
     void output();
 };
 
