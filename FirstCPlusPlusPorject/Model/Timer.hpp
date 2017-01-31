@@ -19,7 +19,7 @@ public:
     Timer();
     void startTimer();
     void resetTimer();
-    void finishimer();
+    void finishTimer();
     void displayTimerInformation();
     long getExecutiontimeInMircoseconds();
     
