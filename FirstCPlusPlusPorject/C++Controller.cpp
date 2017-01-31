@@ -76,5 +76,3 @@ int FirstController:: impactNumber()
 {
     return 345643564;
 }
-
-

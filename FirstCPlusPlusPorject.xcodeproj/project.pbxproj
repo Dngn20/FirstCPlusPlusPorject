@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9CBBFC401E36932600A2AAB5 /* C++Runner.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9CBBFC3E1E36932600A2AAB5 /* C++Runner.cpp */; };
-		9CBBFC431E36934900A2AAB5 /* C++Controller.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9CBBFC411E36934900A2AAB5 /* C++Controller.cpp */; };
+		9C1EC5441E41203000D27469 /* Timer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9C1EC5421E41203000D27469 /* Timer.cpp */; };
+		9C1EC5481E41204400D27469 /* C++Runner.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9C1EC5471E41204400D27469 /* C++Runner.cpp */; };
+		9C1EC54E1E4120FC00D27469 /* C++Controller.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9C1EC54C1E4120FC00D27469 /* C++Controller.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,10 +25,13 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		9C1EC53F1E411F7B00D27469 /* Controller */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Controller; sourceTree = "<group>"; };
+		9C1EC5421E41203000D27469 /* Timer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Timer.cpp; path = Model/Timer.cpp; sourceTree = "<group>"; };
+		9C1EC5431E41203000D27469 /* Timer.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Timer.hpp; path = Model/Timer.hpp; sourceTree = "<group>"; };
+		9C1EC5471E41204400D27469 /* C++Runner.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = "C++Runner.cpp"; path = "Controller/C++Runner.cpp"; sourceTree = "<group>"; };
+		9C1EC5491E41204800D27469 /* FirstController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = FirstController.h; path = Controller/FirstController.h; sourceTree = "<group>"; };
+		9C1EC54C1E4120FC00D27469 /* C++Controller.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "C++Controller.cpp"; sourceTree = "<group>"; };
 		9CBBFC341E368F9D00A2AAB5 /* FirstCPlusPlusPorject */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = FirstCPlusPlusPorject; sourceTree = BUILT_PRODUCTS_DIR; };
-		9CBBFC3E1E36932600A2AAB5 /* C++Runner.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "C++Runner.cpp"; sourceTree = "<group>"; };
-		9CBBFC411E36934900A2AAB5 /* C++Controller.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "C++Controller.cpp"; sourceTree = "<group>"; };
-		9CBBFC451E36988700A2AAB5 /* FirstController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstController.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +45,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9C1EC5401E411FAD00D27469 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9C1EC5421E41203000D27469 /* Timer.cpp */,
+				9C1EC5431E41203000D27469 /* Timer.hpp */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		9CBBFC2B1E368F9C00A2AAB5 = {
 			isa = PBXGroup;
 			children = (
@@ -60,6 +73,7 @@
 		9CBBFC361E368F9D00A2AAB5 /* FirstCPlusPlusPorject */ = {
 			isa = PBXGroup;
 			children = (
+				9C1EC5401E411FAD00D27469 /* Model */,
 				9CBBFC441E36936500A2AAB5 /* Controller */,
 			);
 			path = FirstCPlusPlusPorject;
@@ -68,9 +82,10 @@
 		9CBBFC441E36936500A2AAB5 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				9CBBFC411E36934900A2AAB5 /* C++Controller.cpp */,
-				9CBBFC3E1E36932600A2AAB5 /* C++Runner.cpp */,
-				9CBBFC451E36988700A2AAB5 /* FirstController.h */,
+				9C1EC5471E41204400D27469 /* C++Runner.cpp */,
+				9C1EC54C1E4120FC00D27469 /* C++Controller.cpp */,
+				9C1EC5491E41204800D27469 /* FirstController.h */,
+				9C1EC53F1E411F7B00D27469 /* Controller */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -132,8 +147,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9CBBFC401E36932600A2AAB5 /* C++Runner.cpp in Sources */,
-				9CBBFC431E36934900A2AAB5 /* C++Controller.cpp in Sources */,
+				9C1EC5481E41204400D27469 /* C++Runner.cpp in Sources */,
+				9C1EC5441E41203000D27469 /* Timer.cpp in Sources */,
+				9C1EC54E1E4120FC00D27469 /* C++Controller.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +276,7 @@
 				9CBBFC3D1E368F9D00A2AAB5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
