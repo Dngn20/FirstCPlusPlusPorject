@@ -39,5 +39,5 @@ long Timer :: getExecutiontimeInMircoseconds()
 void Timer :: displayTimerInformation()
 {
     cout << "This is the time you got" << executionTime << endl;
-    cout << "That is this many seconds meatbag" << executionTime/CLOCKS_PER_SEC << endl;
+    cout << "That is this many seconds meatbag " << executionTime/CLOCKS_PER_SEC << endl;
 }

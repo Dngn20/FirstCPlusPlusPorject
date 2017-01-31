@@ -9,6 +9,7 @@
 
 #include <iostream>
 #include "FirstController.h"
+#include "Timer.hpp"
 
 using namespace std;
 
@@ -21,8 +22,13 @@ void FirstController :: usePointerToChange(int * pointedTo)
 void FirstController :: start()
 
 {
+    Timer currentTime;
+    currentTime.startTimer();
+    
     int myNumber = 9;
     int * numberPointer = &myNumber;
+    
+    
     
     std::cout << "Strike Freedom Gundam" << endl;
     this->output();
@@ -38,6 +44,9 @@ void FirstController :: start()
     cout << "Chnaging a value" << endl;
     usePointerToChange(numberPointer);
     cout << "See how the number has been changed: " << myNumber << endl;
+    
+    currentTime.finishTimer();
+    currentTime.displayTimerInformation();
 }
 
 void FirstController:: output()
