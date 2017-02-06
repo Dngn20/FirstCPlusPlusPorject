@@ -16,7 +16,7 @@ public:
 private:
     void useNumbers(int someNumber);
     int impactNumber();
-    void usePointerToChange(int * somePointer);
+       void usePointerToChange(int * somePointer);
 private:
     void output();
 };

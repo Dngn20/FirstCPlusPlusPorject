@@ -9,7 +9,7 @@
 
 #include <iostream>
 #include "FirstController.h"
-#include "Timer.hpp"
+#include "../Model/Timer.hpp"
 
 using namespace std;
 
@@ -28,7 +28,9 @@ void FirstController :: start()
     int myNumber = 9;
     int * numberPointer = &myNumber;
     
-    
+    int numbuh [7];
+    double yes [2];
+
     
     std::cout << "Strike Freedom Gundam" << endl;
     this->output();
